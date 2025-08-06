@@ -13,7 +13,7 @@ export default function Hero() {
             <span className="font-light">finanças</span>
           </h1>
           <p className="text-xl md:text-2xl text-[#f7f7f7] mb-12 font-light leading-relaxed max-w-2xl mx-auto md:mx-0">
-            Uma nova forma de entender e controlar seu dinheiro. Simples,
+            Uma nova forma de entender e controlar suas finanças. Simples,
             elegante e poderoso.
           </p>
           <Button variant="hero" href="/register">
@@ -28,6 +28,7 @@ export default function Hero() {
             width={820}
             height={820}
             className="max-w-full h-auto"
+            draggable={false}
           />
         </div>
       </div>
