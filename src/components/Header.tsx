@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./ui/Button";
+import { scrollToElement } from "@/utils/scrollToElement";
 
 export default function Header() {
   return (
@@ -17,6 +20,18 @@ export default function Header() {
         </h1>
       </div>
       <div className="flex flex-row items-center gap-2 sm:gap-3">
+        <ul className="flex flex-row items-center gap-2 sm:gap-15 text-sm sm:text-base font-medium text-[#f7f7f7] mr-12">
+          <li>
+            <a href="#produto" onClick={scrollToElement}>
+              Produto
+            </a>
+          </li>
+          <li>
+            <a href="#sobre" onClick={scrollToElement}>
+              Sobre
+            </a>
+          </li>
+        </ul>
         <Button variant="login" href="/login">
           Login
         </Button>
